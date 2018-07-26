@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['192.168.10.10']
 # Application definition
 
 INSTALLED_APPS = [
+    'posts',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -82,7 +83,12 @@ WSGI_APPLICATION = 'djangoproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql'
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'djangoproject',
+        'USER': 'homestead',
+        'PASSWORD': 'secret',
+        'HOST': '192.168.10.10',
+        'PORT': ''
     }
 }
 
